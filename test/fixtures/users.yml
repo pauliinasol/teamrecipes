@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  image: MyString
+  email: MyString
+  vegan: false
+  glutenfree: false
+  dairyfree: false
+  fatfree: false
+  meatfree: false
+  vegetarian: false
+  pescoterian: false
+  isAdmin: false
+  background: MyText
+
+two:
+  username: MyString
+  image: MyString
+  email: MyString
+  vegan: false
+  glutenfree: false
+  dairyfree: false
+  fatfree: false
+  meatfree: false
+  vegetarian: false
+  pescoterian: false
+  isAdmin: false
+  background: MyText

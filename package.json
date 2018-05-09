@@ -1,0 +1,11 @@
+{
+  "name": "teamrecipes",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "semantic-ui": "^2.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

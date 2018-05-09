@@ -1,0 +1,77 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username, id: :user_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :user_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegan %>
+    <%= form.check_box :vegan, id: :user_vegan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :glutenfree %>
+    <%= form.check_box :glutenfree, id: :user_glutenfree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dairyfree %>
+    <%= form.check_box :dairyfree, id: :user_dairyfree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fatfree %>
+    <%= form.check_box :fatfree, id: :user_fatfree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meatfree %>
+    <%= form.check_box :meatfree, id: :user_meatfree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetarian %>
+    <%= form.check_box :vegetarian, id: :user_vegetarian %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pescoterian %>
+    <%= form.check_box :pescoterian, id: :user_pescoterian %>
+  </div>
+
+  <!-- <div class="field">
+    <%= form.label :isAdmin %>
+    <%= form.check_box :isAdmin, id: :user_isAdmin %>
+  </div> -->
+
+  <div class="field">
+    <%= form.label :background %>
+    <%= form.text_area :background, id: :user_background %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teamrecipes</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="ui massive fixed inverted borderless menu">
+      <div class="ui container">
+        <a class="active item" href="/">Home</a><a class="header item" href="/signup">New user</a><a class="item" href="starter-template.html#">About</a><a class="item" href="starter-template.html#">Contact</a>
+      </div>
+    </div>
+
+
+
+
+      <%= yield %>
+
+
+
+
+
+
+    <style type="text/css">
+      .main.container {
+        margin-top: 7em;
+      }
+
+
+      p.lead {
+        font-size: 1.3em;
+        color: #333333;
+        line-height: 1.4;
+        font-weight: 300;
+      }
+    </style>
+    <script>
+    window.jQuery || document.write('<script src="http://mysite.com/jquery.min.js"><\/script>')
+    </script>
+  </body>
+</html>

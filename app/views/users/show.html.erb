@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @user.image %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Vegan:</strong>
+  <%= @user.vegan %>
+</p>
+
+<p>
+  <strong>Glutenfree:</strong>
+  <%= @user.glutenfree %>
+</p>
+
+<p>
+  <strong>Dairyfree:</strong>
+  <%= @user.dairyfree %>
+</p>
+
+<p>
+  <strong>Fatfree:</strong>
+  <%= @user.fatfree %>
+</p>
+
+<p>
+  <strong>Meatfree:</strong>
+  <%= @user.meatfree %>
+</p>
+
+<p>
+  <strong>Vegetarian:</strong>
+  <%= @user.vegetarian %>
+</p>
+
+<p>
+  <strong>Pescoterian:</strong>
+  <%= @user.pescoterian %>
+</p>
+
+<p>
+  <strong>Isadmin:</strong>
+  <%= @user.isAdmin %>
+</p>
+
+<p>
+  <strong>Background:</strong>
+  <%= @user.background %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

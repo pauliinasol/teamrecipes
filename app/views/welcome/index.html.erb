@@ -1,0 +1,109 @@
+
+<!-- <div class="ui inverted vertical masthead center aligned segment"> -->
+<div class="ui main center aligned text container frontpage">
+  <h1 class="ui huge header">
+    Semantic UI starter template
+  </h1>
+  <p class="lead">
+    Use this document as a way to quickly start any new project.<br>All you get is this text and a mostly barebones HTML document.
+  </p>
+  <!-- <p>
+    <a href="" class="ui primary button" data-modal-trigger="test-modal">Open Modal</a>
+    <a href="" class="ui primary button" data-modal-trigger="test-modal2">Open Modal 2</a>
+
+  </p> -->
+  <div class="ui labeled button" tabindex="0">
+  <div class="ui button">
+    <i class="heart icon"></i> Like
+  </div>
+  <a class="ui basic label">
+    2,048
+  </a>
+</div>
+<div class="ui left labeled button" tabindex="0">
+  <a class="ui basic right pointing label">
+    2,048
+  </a>
+  <div class="ui button">
+    <i class="heart icon"></i> Like
+  </div>
+</div>
+<div class="ui left labeled button" tabindex="0">
+  <a class="ui basic label">
+    1,048
+  </a>
+  <div class="ui icon button">
+    <i class="fork icon"></i>
+  </div>
+</div>
+</div>
+
+
+
+<div id="test-modal" class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Profile Picture
+  </div>
+  <div class="image content">
+    <div class="ui medium image">
+    </div>
+    <div class="description">
+      <div class="ui header">We've auto-chosen a profile image for you.</div>
+      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+
+
+<div id="test-modal2" class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+  </div>
+  <div class="content">
+    test modal 2
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+
+body {
+  background-image: url(<%= asset_path 'cafe.jpeg' %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+</style>
+<script>
+
+var $triggers = $("[data-modal-trigger]");
+
+$.each($triggers, function (i, trigger) {
+
+    $(trigger).click(function () {
+        var modalKey = $(this).data('modal-trigger');
+        console.log('Modal Key', modalKey);
+        $("#" + modalKey).modal('show');
+    })
+
+});
+</script>
